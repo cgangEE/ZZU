@@ -40,7 +40,6 @@ ll gao(ll a){
 				x=0;
 				repd(l, sz(v), i) x+=(l-k)*(l==i?j:v[l-1]);
 				ret+=f[k][i-1][x+M];
-				//cout<<k<<' '<<i-1<<' '<<x<<' '<<f[k][i-1][x+M]<<endl;
 			}
 		}
 
@@ -64,13 +63,5 @@ int main(){
 		cin>>a>>b;
 		cout<<gao(b+1)-gao(a)<<endl;
 	}
-	/*
-	repf(i, 0, 100000000){
-		if (gao(i+1)-gao(i)>1){
-			cout<<i+1<<' '<<gao(i+1)<<endl;
-			cout<<i<<' '<<gao(i)<<endl;
-		}
-	}
-	*/
 	return 0;
 }
