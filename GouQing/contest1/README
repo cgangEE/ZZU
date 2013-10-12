@@ -1,3 +1,5 @@
+2012 Asia Hangzhou Regional Contest
+
 A. Looploop
 
 B. Stealing a Cake
@@ -13,8 +15,12 @@ F. Shoot the Airplane
 G. Homework
 
 H. Friend Chains
+给定N个点之间的M个关系(2<=N<=1000, 0<=M<=10000)，现在要求N个点之间的所有最短路中的最长路。
+暴力+spfa 枚举源点x，spfa从源点x到其他点的最短路，来更新最短路的最大值。
 
 I. The Power of Xianqi
+象棋的7种棋子的分值不同，如果没有马或炮或没有马和炮则扣一分，但分数不能为0。要求对两方的棋子价值估值，求哪一方有优势。
+简单模拟 按照题目描述求分值，比较双方分值大小。
 
 J. Scaring the Birds
 
