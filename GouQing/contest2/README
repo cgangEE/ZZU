@@ -1,0 +1,30 @@
+2012 Asia Tianjin Regional Contest
+
+A. Mahjong
+给定日本麻将的13张牌，现在听牌，求哪些牌可以胡牌。有3种方式可以胡牌，第一种是4个刻子或顺子+一个对子。第二种是七对子，即七对不同的对子。第三种是国士无双，即万、条、饼的1和9一共6张牌，再加上所有的字牌一共7张，再加上上述13张牌的一种，构成和牌。
+枚举 枚举听牌的牌面，在判断这14张牌是否能胡牌。
+
+B. Sum of divisors
+
+C. locker
+给定两个长度为N的(1<=N<=1000)的数字串s、t，现在要求每次可以旋转1至3个连续的数字，要求最小的步数使得s变为t。
+bfs+DP 先bfs 0-999 这些状态之间的最短路径，保存在g[i][j]中。f[i][x][y]表示当前s状态是第i个数字是y，第i-1个数字是x，且i-1之前的数字与t相同，所花费的最小步数。状态转移方程为:
+    f[i][u][v] = min {f[i-1][x][y] + g[x,y,s[i]][t[i-2],u,v]}
+最后f[n-1][t[n-2]-'0'][t[n-1]-'0']即为答案。
+
+D. Game
+
+E. charge-station
+
+F. str2int
+
+G. swap
+
+H. Hunters
+
+I. No place to hide
+
+J. mmm2
+
+K. Queue Sequence
+
