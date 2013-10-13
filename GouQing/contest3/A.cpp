@@ -51,8 +51,8 @@ int main(){
 	repf(k, 1, N){
 		f[k][0][M]=1;
 		repf(i, 1, N){
-				rep(j, 10)
-			repf(x, (k-i)*j, M*2+10)
+			rep(j, 10)
+				repf(x, (k-i)*j, M*2+10)
 					f[k][i][x]+=f[k][i-1][x-(k-i)*j];
 		}
 	}
