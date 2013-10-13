@@ -71,27 +71,20 @@ int main(){
 			f[x][1]=f[y][1]+abs(a[i].x-b[1].x);
 			g[i][1]=1;
 			repf(j, 2, min(m, i)){
-
 				int det=abs(a[i].x-b[j].x);
-				
-				
+
 				if (f[y][j-1]!=-1 && (f[x][j]==-1 || f[y][j-1]+det<f[x][j])){
 					f[x][j]=f[y][j-1]+det;
 					g[i][j]=j-1;
 				}
-
-
 				if (f[y][j]!=-1 && (f[x][j]==-1 || f[y][j]+det<f[x][j])){
 					f[x][j]=f[y][j]+det;
 					g[i][j]=j;
 				}
 				
-			
-
 			}
 		}
 		cout<<f[n&1][m]<<endl;
-		
 		
 		gao(n, m);
 		
