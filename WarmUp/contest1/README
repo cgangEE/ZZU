@@ -9,7 +9,8 @@ C. Cactus Revolution
 D. Dome of Circus
 
 E. Evacuation Plan
-
+在一维坐标上，给定N个士兵和M个防空洞，(1<=N<=4000, 1<=M<=N)，要求N个士兵找到一个防空洞，且每个防空洞至少有一个士兵，求最小士兵到防空洞路径之和。
+DP 反正法可以证明，在一维坐标上的排好序的士兵一定是划分为M段，分别到M个防空洞中。f[i][j]表示第i个士兵到第j个防空洞中去，f[i][j]=min(f[i-1][j], f[i-1][j-1])+cost(i,j)。
 
 F. Factorial Simplification
 
